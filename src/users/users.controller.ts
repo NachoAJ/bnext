@@ -13,13 +13,13 @@ export class UsersController {
     @Body('lastName') userLastName: string,
     @Body('phone') userPhone: string,
   ) {
-    const generatedId = await this.usersService.insertUser(
+    const response = await this.usersService.insertUser(
       userName,
       userLastName,
       userPhone,
     );
 
-    return { id: generatedId };
+    return response;
   }
 
   @Post('add-contacts')
