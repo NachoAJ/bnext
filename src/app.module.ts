@@ -6,7 +6,7 @@ import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://localhost:27017/bnext'), UsersModule],
+  imports: [MongooseModule.forRoot(`mongodb+srv://${process.env.DB_PASSWORD}:admin@cluster0.ifhit.mongodb.net/bnext?retryWrites=true&w=majority`), UsersModule],
   controllers: [AppController],
   providers: [AppService],
 })
