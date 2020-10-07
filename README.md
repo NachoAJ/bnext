@@ -1,9 +1,9 @@
 ### Arranque del proyecto
 
 Para instalar y arranacar el proyecto deberemos seguir los siguientes pasos:
-- Clonar este repositorio con el comando `git clone https://github.com/NachoAJ/bnext`
+- Clonar este repositorio con el comando `git clone https://github.com/NachoAJ/nestJS-API`
 - Entrar al directorio del proyecto con `cd bnext`
-- Ejecutar `docker build -t bnext-api .` y a continuacion `docker run -d -p 3005:3000 bnext-api`
+- Ejecutar `docker build -t nestjs-api .` y a continuacion `docker run -d -p 3005:3000 nestjs-api`
 
 Asi tendremos nuestro API corriendo y escuchando en nuestro puerto local 3005
 
